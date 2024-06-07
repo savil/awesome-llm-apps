@@ -1,6 +1,9 @@
 {
   "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/main/.schema/devbox.schema.json",
   "packages": ["python3@latest"],
+  "env": {
+     "CC":"/usr/bin/gcc",
+  },
   "shell": {
     "init_hook": [
       ". $VENV_DIR/bin/activate",
